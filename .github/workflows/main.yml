@@ -1,0 +1,18 @@
+name: Identity Verification Workflow
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch: # This allows the manual "Run workflow" button
+
+jobs:
+  verify-identity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: 23f2005206@ds.study.iitm.ac.in
+        run: |
+          echo "Identity Verification Step for 23f2005206@ds.study.iitm.ac.in"
+          echo "Status: Active"
